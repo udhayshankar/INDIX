@@ -28,14 +28,5 @@ public class KeyWordSearchService {
 		return objectMapper.writeValueAsString(KeyWordSearchDAO.getValuesByKeyWord(keyWord));
 	}
 
-	@GET
-	@Path("/{param}")
-	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-	public ArrayList<String> print(@PathParam("param") String s) {
-		ArrayList<String> a = new ArrayList<String>();
-		a.add(s);
-		a.add("udahy");
-
-		return a;
-	}
+	
 }
